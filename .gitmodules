@@ -1,0 +1,6 @@
+[submodule "viktorifit-frontend"]
+	path = viktorifit-frontend
+	url = https://github.com/crisvito/viktorifit-frontend.git
+[submodule "machine-learning"]
+	path = machine-learning
+	url = https://github.com/crisvito/machine-learning.git
