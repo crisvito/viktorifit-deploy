@@ -4,3 +4,6 @@
 [submodule "machine-learning"]
 	path = machine-learning
 	url = https://github.com/crisvito/machine-learning.git
+[submodule "viktorifit-backend"]
+	path = viktorifit-backend
+	url = https://github.com/crisvito/viktorifit-backend.git
