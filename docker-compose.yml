@@ -1,0 +1,35 @@
+services:
+  frontend:
+    build:
+      context: ./viktorifit-frontend
+      dockerfile: Dockerfile
+    ports:
+      - "5173:5173"
+
+  backend:
+    build:
+      context: ./viktorifit-backend
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
+    depends_on:
+      - db
+    env_file:
+      - ./viktorifit-backend/.env
+
+  ml:
+    build:
+      context: ./machine-learning
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000"
+  db:
+    image: mysql:8
+    environment:
+      MYSQL_DATABASE: viktorifit
+      MYSQL_USER: appuser
+      MYSQL_PASSWORD: secret
+      MYSQL_ROOT_PASSWORD: viktoria03
+    ports:
+      - "3307:3306"
+

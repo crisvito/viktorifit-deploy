@@ -1,0 +1,21 @@
+{
+  "configurations": [
+    {
+      "type": "java",
+      "name": "ViktorifitApplication",
+      "request": "launch",
+      "mainClass": "com.viktoria.viktorifit.ViktorifitApplication",
+      "projectName": ""
+    },
+    {
+      "type": "java",
+      "name": "Spring Boot-ViktorifitBackendApplication<viktorifit-backend>",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "mainClass": "com.viktoria.viktorifit_backend.ViktorifitBackendApplication",
+      "projectName": "viktorifit-backend",
+      "args": "",
+      "envFile": "${workspaceFolder}/.env"
+    }
+  ]
+}
